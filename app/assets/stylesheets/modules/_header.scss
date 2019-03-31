@@ -1,0 +1,95 @@
+.va-btn__inner {
+    padding-left: 3px;
+    line-height: 30px;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+}
+header.va-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 99999999;
+  .va-header__inner--top {
+    background-color: #98DDDE;
+  }
+  .va-header__inner {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.05);
+    height: 64px;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    .va-header__box {
+      width: 1000px;
+      position: relative;
+      margin: 0 auto;
+      height: 100%;
+      .va-header__logo-wrapper{
+        left: 0;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        .va-header__logo{
+          background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/l/lilybelly/20190328/20190328215756.png");
+          height: 30px;
+          display: block;
+          background-size: 212px;
+          width: 212px;
+        }
+      }
+      .va-header__login{
+        right: 136px;
+        position: absolute;
+        top: 16px;
+      }
+      .va-header__registration{
+        right: 0;
+        position: absolute;
+        top: 16px;
+        a.va-btn.all-wh{
+          border: none;
+          background: #FF6F61;
+        }
+      }
+    }
+  }
+}
+.va-btn{
+  width: 120px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  overflow: initial !important;
+  text-align: center !important;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+}
+.wh{
+  border: 1px solid white;
+  background: white;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+.all-wh{
+  color: white;
+}
+a{
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+  line-height: 32px;
+}

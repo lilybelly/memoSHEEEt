@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title MemoSHEEEt
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "width=device-width,user-scalable=no,maximum-scale=1″ /> ", :name => "viewport"}/
+    %link{:href => "style.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "tablet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "smart.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+
+  %body
+    = yield
