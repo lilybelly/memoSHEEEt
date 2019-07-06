@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'memo#index'
   # resources :memo
   get 'memo/president'
+  resources :users, only: [:index, :edit, :update]
 end
